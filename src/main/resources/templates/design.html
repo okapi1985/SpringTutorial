@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"
-	xmlns:th="http://www.thymeleaf.org">
+	xmlns:th="http://thymeleaf.org">
 <head>
 <title>Aplikacja Taco Cloud</title>
 <link rel="stylesheet" th:href="@{/styles.css}" />
@@ -11,6 +11,7 @@
 	<img th:src="@{/images/TacoCloud.png}" />
 
 	<form method="POST" th:object="${design}">
+
 	
 	<span class="validationError"
           th:if="${#fields.hasErrors('ingredients')}" 
